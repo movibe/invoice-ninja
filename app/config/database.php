@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'ninja',
-			'username'  => 'ninja',
-			'password'  => 'ninja',
+			'host'      => '127.0.0.1',
+			'database'  => 'ninja_laravel',
+			'username'  => 'root',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

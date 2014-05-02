@@ -170,13 +170,13 @@ define('SESSION_DATETIME_FORMAT', 'datetimeFormat');
 define('SESSION_COUNTER', 'sessionCounter');
 define('SESSION_LOCALE', 'sessionLocale');
 
-define('DEFAULT_TIMEZONE', 'US/Eastern');
-define('DEFAULT_CURRENCY', 1); // US Dollar
+define('DEFAULT_TIMEZONE', 'America/Sao_Paulo');
+define('DEFAULT_CURRENCY', 9); // US Dollar
 define('DEFAULT_DATE_FORMAT', 'M j, Y');
 define('DEFAULT_DATE_PICKER_FORMAT', 'M d, yyyy');
 define('DEFAULT_DATETIME_FORMAT', 'F j, Y, g:i a');
 define('DEFAULT_QUERY_CACHE', 120); // minutes
-define('DEFAULT_LOCALE', 'en');
+define('DEFAULT_LOCALE', 'pt_BR');
 
 define('RESULT_SUCCESS', 'success');
 define('RESULT_FAILURE', 'failure');
