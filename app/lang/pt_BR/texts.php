@@ -135,6 +135,7 @@ return array(
   'new_invoice' => 'Nova Fatura',
   'new_payment' => 'Novo Pagamento',
   'new_credit' => 'Novo Crédito',
+  'new_product' => 'Novo Produto',
   'contact' => 'Contato',
   'date_created' => 'Data de Criação',
   'last_login' => 'Último Login',

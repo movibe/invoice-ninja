@@ -3,7 +3,9 @@
 class ProductController extends \BaseController {
 
   public function index(){
-    return 'Lista de Produtos';
+    $p = Product::all();
+    $vars = array('products' => $p);
+    View::make('products.products', $vars);
   }
 
   public function getDatatable()

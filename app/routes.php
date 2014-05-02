@@ -63,7 +63,7 @@ Route::group(array('before' => 'auth'), function()
   Route::get('force_inline_pdf', 'UserController@forcePDFJS');
   
   Route::get('api/products', array('as'=>'api.products', 'uses'=>'ProductController@getDatatable'));
-  Route::resource('products', 'ProductController');
+  Route::get('products', array('as'=>'api.products', 'uses'=>'ProductController@getDatatable'));
   Route::get('products/{product_id}/archive', 'ProductController@archive');
 
   /*
