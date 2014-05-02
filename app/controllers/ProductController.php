@@ -2,6 +2,10 @@
 
 class ProductController extends \BaseController {
 
+  public function index(){
+    return 'Lista de Produtos';
+  }
+
   public function getDatatable()
   {
     $query = DB::table('products')
