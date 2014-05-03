@@ -4402,12 +4402,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "39f55397645b8c583102895c40584d3b29407271"
+                "reference": "ef7809a99a1c7debb244c7f49bc43e0de8116428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/39f55397645b8c583102895c40584d3b29407271",
-                "reference": "39f55397645b8c583102895c40584d3b29407271",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ef7809a99a1c7debb244c7f49bc43e0de8116428",
+                "reference": "ef7809a99a1c7debb244c7f49bc43e0de8116428",
                 "shasum": ""
             },
             "require": {
@@ -4468,7 +4468,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-05-01 17:15:14"
+            "time": "2014-05-02 13:42:32"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4533,12 +4533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "f81cc1a52a8c2241015f02470d34ac44ff988b14"
+                "reference": "f7069ee51fa9fb6c038e16a9d0e3439f5449dcf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/f81cc1a52a8c2241015f02470d34ac44ff988b14",
-                "reference": "f81cc1a52a8c2241015f02470d34ac44ff988b14",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/f7069ee51fa9fb6c038e16a9d0e3439f5449dcf2",
+                "reference": "f7069ee51fa9fb6c038e16a9d0e3439f5449dcf2",
                 "shasum": ""
             },
             "require": {
@@ -4547,7 +4547,7 @@
                 "sebastian/exporter": "~1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.1"
             },
             "type": "library",
             "extra": {
@@ -4590,7 +4590,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2014-05-01 08:04:40"
+            "time": "2014-05-02 07:05:58"
         },
         {
             "name": "sebastian/diff",
