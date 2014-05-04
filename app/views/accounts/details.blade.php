@@ -90,24 +90,7 @@
 
 	<script type="text/javascript">
 
-	//Buscar CEP Brasil
-	$(function(){
-		$('input[name="postal_code"]').blur(function(){
-			var cep = $.trim($('input[name="postal_code"]').val().replace('-', ''));
 
-			$.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+cep, function(){
-
-				if(resultadoCEP["resultado"] == "1"){
-					$('input[name="address1"]').val(unescape(resultadoCEP["tipo_logradouro"])+" "+unescape(resultadoCEP["logradouro"]));
-					$('input[name="address2"]').val(unescape(resultadoCEP["bairro"]));
-					$('input[name="city"]').val(unescape(resultadoCEP["cidade"]));
-					$('input[name="state"]').val(unescape(resultadoCEP["uf"]));
-					$('input[name="country_id"]').val(76);
-
-					
-			});
-		});
-	});
 
 		$(function() {
 			$('#country_id').combobox();
