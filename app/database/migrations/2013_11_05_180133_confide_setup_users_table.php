@@ -384,21 +384,48 @@ class ConfideSetupUsersTable extends Migration {
             $t->unique( array('account_id','public_id') );
         });
 
-        Schema::create('products', function($t)
-        {
+        Schema::create('product_categories', function($t){
             $t->increments('id');
             $t->unsignedInteger('account_id')->index();
             $t->unsignedInteger('user_id');
             $t->timestamps();
             $t->softDeletes();
 
+            $t->string('sku');
+            $t->string('image');
+            $t->string('name');
+            $t->string('slug');
+            $t->text('description');
+
+            $t->foreign('account_id')->references('id')->on('accounts')->onDelete('cascade'); 
+            $t->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
+
+            $t->unsignedInteger('public_id');
+            $t->unique( array('account_id','public_id') );
+        }); 
+
+        Schema::create('products', function($t)
+        {
+            $t->increments('id');
+            $t->unsignedInteger('account_id')->index();
+            $t->unsignedInteger('product_category_id')->index();
+            $t->unsignedInteger('user_id');
+            $t->timestamps();
+            $t->softDeletes();
+
             $t->string('product_key');
+            $t->string('sku');
+            $t->string('image');
+            $t->string('slug');
+            $t->text('description');
             $t->text('notes');
             $t->decimal('cost', 13, 4);
+            $t->decimal('price', 13, 4);
             $t->decimal('qty', 13, 4);
             
             $t->foreign('account_id')->references('id')->on('accounts')->onDelete('cascade'); 
             $t->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
+            $t->foreign('product_category_id')->references('id')->on('product_categories')->onDelete('cascade'); 
             
             $t->unsignedInteger('public_id');
             $t->unique( array('account_id','public_id') );
@@ -528,6 +555,7 @@ class ConfideSetupUsersTable extends Migration {
         Schema::dropIfExists('account_gateways');
         Schema::dropIfExists('invoice_items');
         Schema::dropIfExists('products');
+        Schema::dropIfExists('product_categories');
         Schema::dropIfExists('tax_rates');
         Schema::dropIfExists('contacts');
         Schema::dropIfExists('invoices');
