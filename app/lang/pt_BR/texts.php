@@ -75,7 +75,7 @@ return array(
   'enable_line_item_tax' => 'Permitir especificar o <b>item da linha de taxas</b>',
 
   // navigation
-  'dashboard' => 'Painel de Controle',
+  'dashboard' => 'Dashboard',
   'clients' => 'Clientes',
   'invoices' => 'Faturas',
   'payments' => 'Pagamentos',
