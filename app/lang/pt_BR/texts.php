@@ -29,7 +29,7 @@ return array(
   'invoice' => 'Fatura',
   'client' => 'Cliente',
   'invoice_date' => 'Data da Fatura',
-  'due_date' => 'Data de Vencimento',
+  'due_date' => 'Vencimento',
   'invoice_number' => 'Número da Fatura',
   'invoice_number_short' => 'Fatura #',
   'po_number' => 'Núm. Ordem de Compra',

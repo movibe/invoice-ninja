@@ -43,8 +43,8 @@
 
 <script type="text/javascript">
 
-  // var currencies = {{ Currency::all(); }};
-  var currencies = {{ Currency::remember(120)->get(); }};
+  var currencies = {{ Currency::all(); }};
+  // var currencies = {{ Currency::remember(120)->get(); }};
   console.warn(currencies);
   var currencyMap = {};
   for (var i=0; i<currencies.length; i++) {
