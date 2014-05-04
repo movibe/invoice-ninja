@@ -10,6 +10,9 @@
 	<!--<h3>{{ $title }} Client</h3>-->
 
 	{{ Former::open($url)->addClass('col-md-12 warn-on-exit')->method($method)->rules(array(
+		'name' => 'required',
+		'first_name' => 'required',
+		'phone' => 'required',
   		'email' => 'email|required'  		
 	)); }}
 
@@ -90,7 +93,6 @@
 
 	<script type="text/javascript">
 
-
 	//Buscar CEP Brasil
 	$(function(){
 		$('input[name="postal_code"]').blur(function(){
@@ -99,15 +101,16 @@
 			$.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+cep, function(){
 
 				if(resultadoCEP["resultado"] == "1"){
-					$('input[name="address1"]').val(unescape(resultadoCEP["tipo_logradouro"])+" "+unescape(resultadoCEP["logradouro"]));
+					$('input[name="address1"]').val(unescape(resultadoCEP["tipo_logradouro"])+" "+unescape(resultadoCEP["logradouro"]) + ", " );
 					$('input[name="address2"]').val(unescape(resultadoCEP["bairro"]));
 					$('input[name="city"]').val(unescape(resultadoCEP["cidade"]));
 					$('input[name="state"]').val(unescape(resultadoCEP["uf"]));
 					$('input[name="country_id"]').val(76);
-
+					$('input[name="address1]').focus();
 					
-			});
-		});
+				}
+			})
+		})
 	});
 
 	$(function() {
