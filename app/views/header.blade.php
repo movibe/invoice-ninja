@@ -107,7 +107,6 @@
       <ul class="nav navbar-nav" style="font-weight: bold">
         {{ HTML::nav_link('dashboard', 'dashboard') }}
         {{ HTML::menu_link('client') }}
-        {{ HTML::menu_link('product') }}
         {{ HTML::menu_link('invoice') }}
         {{ HTML::menu_link('payment') }}
         {{ HTML::menu_link('credit') }}
@@ -457,7 +456,7 @@ Want something changed? We're {{ link_to('https://github.com/hillelcoren/invoice
 @endif
 
 @if (!Utils::isNinjaProd() && !Utils::isNinjaDev())    
-<div class="container">{{ trans('texts.powered_by') }} <a href="https://www.invoiceninja.com/" target="_blank">InvoiceNinja.com</a></div>
+                        <div class="container">{{ trans('texts.powered_by') }} <a href="http://www.movibe.com.br/" target="_blank">MOVIBE</a></div>
 @endif
 
 <p>&nbsp;</p>
